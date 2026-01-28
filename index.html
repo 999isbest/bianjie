@@ -29,7 +29,7 @@
             font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
             overflow: hidden;
             height: 100vh;
-            background: 
+            background:
                 radial-gradient(circle at 20% 30%, var(--gradient-1) 0%, transparent 40%),
                 radial-gradient(circle at 80% 70%, var(--gradient-2) 0%, transparent 40%),
                 #05080a;
@@ -143,11 +143,11 @@
         }
 
         /* 文字样式升级 */
-        h1 { 
-            font-size: clamp(2.5rem, 6vw, 4.5rem); 
-            letter-spacing: 20px; 
-            color: var(--accent-color); 
-            text-shadow: 
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            letter-spacing: 20px;
+            color: var(--accent-color);
+            text-shadow:
                 0 0 10px rgba(0,210,255,0.4),
                 0 0 30px rgba(0,210,255,0.3),
                 0 0 60px rgba(0,210,255,0.2);
@@ -195,19 +195,19 @@
         }
 
         /* 核心文本字号统一改为1.25rem */
-        p { 
-            font-size: 1.25rem; 
-            line-height: 2.2; 
-            max-width: 800px; 
-            margin: 0 auto; 
+        p {
+            font-size: 1.25rem;
+            line-height: 2.2;
+            max-width: 800px;
+            margin: 0 auto;
             letter-spacing: 3px;
             opacity: 0.95;
         }
-        
+
         /* 高亮文字升级 - 动态下划线 */
-        .highlight { 
-            color: var(--accent-red); 
-            font-weight: 600; 
+        .highlight {
+            color: var(--accent-red);
+            font-weight: 600;
             position: relative;
             /* 添加文字发光效果 */
             text-shadow: 0 0 8px rgba(255,62,62,0.4);
@@ -242,9 +242,9 @@
             max-width: 700px;
             margin: 20px auto 30px;
             /* 添加渐变发光 */
-            background-image: linear-gradient(to right, 
-                #10b981, #10b981 33%, 
-                #f59e0b 33%, #f59e0b 66%, 
+            background-image: linear-gradient(to right,
+                #10b981, #10b981 33%,
+                #f59e0b 33%, #f59e0b 66%,
                 #ef4444 66%, #ef4444);
         }
 
@@ -290,7 +290,7 @@
             border: 1px solid var(--glass-border);
             border-radius: 12px;
             backdrop-filter: blur(12px);
-            box-shadow: 
+            box-shadow:
                 0 10px 30px rgba(0,0,0,0.2),
                 inset 0 1px 0 rgba(255,255,255,0.1),
                 0 0 20px rgba(0,210,255,0.05);
@@ -339,7 +339,7 @@
             padding: 50px 40px; /* 增加内边距 */
             border-radius: 16px; /* 更大圆角 */
             backdrop-filter: blur(15px); /* 增强模糊 */
-            box-shadow: 
+            box-shadow:
                 0 15px 40px rgba(0,0,0,0.25),
                 inset 0 1px 0 rgba(255,255,255,0.1),
                 0 0 30px rgba(0,210,255,0.1); /* 添加外发光 */
@@ -428,7 +428,7 @@
         .button-glow:hover {
             background: var(--accent-color);
             color: #000;
-            box-shadow: 
+            box-shadow:
                 0 0 25px var(--accent-color),
                 0 0 50px rgba(0,210,255,0.5),
                 0 0 80px rgba(0,210,255,0.3);
@@ -522,50 +522,50 @@
                 width: 95%;
                 height: 550px;
             }
-            
+
             h1 {
                 letter-spacing: 10px;
                 font-size: clamp(2rem, 5vw, 3rem);
             }
-            
+
             h2 {
                 letter-spacing: 5px;
                 font-size: clamp(1.5rem, 3vw, 2.2rem);
             }
-            
+
             p {
                 letter-spacing: 2px;
                 line-height: 2;
                 padding: 0 20px;
                 font-size: 1.25rem;
             }
-            
+
             .chart-container {
                 padding: 12px; /* 进一步缩小内边距 */
                 margin: 10px auto;
                 max-width: 90%; /* 移动端适当放宽 */
                 min-height: 220px; /* 从280px缩小到220px */
             }
-            
+
             .chart-wrapper {
                 height: 200px; /* 从280px缩小到200px */
             }
-            
+
             .conclusion-card {
                 padding: 30px 20px;
                 margin: 10px;
                 max-width: 95%;
             }
-            
+
             .conclusion-card .big-text {
                 font-size: clamp(1.5rem, 5vw, 2.2rem);
             }
-            
+
             .boundary-slider {
                 margin: 15px auto;
                 max-width: 90%;
             }
-            
+
             .button-glow {
                 padding: 15px 40px;
                 font-size: 1rem;
@@ -585,16 +585,16 @@
                 height: 60px;
                 font-size: 20px;
             }
-            
+
             .tooltip {
                 font-size: 1.1rem;
                 max-width: 250px;
             }
-            
+
             .boundary-labels {
                 font-size: 1.05rem;
             }
-            
+
             .source {
                 font-size: 0.75rem; /* 进一步缩小移动端来源文字 */
             }
@@ -619,7 +619,7 @@
                     问题的症结不在于<span class="highlight">“参考文献”</span>这一个网络梗本身，<br>
                     而在于我们如何界定“玩梗”与“网暴”的边界。
                 </p>
-                
+
                 <div class="boundary-slider">
                     <div class="boundary-dot" style="left: 20%" onmouseover="showTooltip(this, '创意表达：健康的玩梗，仅针对现象，不伤害他人')" onmouseout="hideTooltip()"></div>
                     <div class="boundary-dot" style="left: 80%" onmouseover="showTooltip(this, '网络暴力：针对个人的恶意攻击，践踏他人尊严')" onmouseout="hideTooltip()"></div>
@@ -638,14 +638,14 @@
                     践踏了<span class="highlight">“尊严”的底线</span>，越过了<span class="highlight">“善意”的边界</span>，<br>
                     便会沦为人身攻击、盲目贴标签的利器。
                 </p>
-                
+
                 <!-- 插入网络暴力界限判断图表 -->
                 <div class="chart-container">
                     <h3>您判断某一评论是否是网络暴力的界限是？</h3>
                     <div class="chart-wrapper">
                         <canvas id="networkViolenceChart"></canvas>
                     </div>
-                    <p class="source">数据来源：调研工厂 | 澎湃号 @调研工厂</p>
+                    <p class="source">数据来源：澎湃新闻-调研工厂</p>
                 </div>
             </div>
 
@@ -706,7 +706,7 @@
         const nextBtn = document.getElementById('nextBtn');
         let tooltip = null;
         let networkViolenceChart = null; // 图表实例
-        
+
         // ========== 1. 核心交互逻辑 ==========
         // 下一页
         function nextStep() {
@@ -720,7 +720,7 @@
 
                 // 更新按钮状态
                 updateButtonStates();
-                
+
                 // 如果切换到第1页，延迟初始化图表（确保容器已显示）
                 if (currentStep === 1) {
                     // 延迟执行，确保CSS过渡完成
@@ -743,7 +743,7 @@
 
                 // 更新按钮状态
                 updateButtonStates();
-                
+
                 // 如果回到第1页，确保图表已渲染
                 if (currentStep === 1 && !networkViolenceChart) {
                     setTimeout(() => {
@@ -757,7 +757,7 @@
         function updateButtonStates() {
             // 第一页时禁用上一页按钮
             prevBtn.disabled = currentStep === 0;
-            
+
             // 最后一页时禁用下一页按钮
             nextBtn.disabled = currentStep === sections.length - 1;
         }
@@ -774,17 +774,17 @@
             if (tooltip) {
                 document.body.removeChild(tooltip);
             }
-            
+
             // 创建新提示框
             tooltip = document.createElement('div');
             tooltip.className = 'tooltip';
             tooltip.textContent = text;
-            
+
             // 计算位置
             const rect = element.getBoundingClientRect();
             tooltip.style.top = `${rect.bottom + window.scrollY + 10}px`;
             tooltip.style.left = `${rect.left + window.scrollX - (tooltip.offsetWidth / 2) + (element.offsetWidth / 2)}px`;
-            
+
             document.body.appendChild(tooltip);
         }
 
@@ -801,17 +801,17 @@
             if (networkViolenceChart) {
                 networkViolenceChart.destroy();
             }
-            
+
             // 获取canvas元素
             const ctx = document.getElementById('networkViolenceChart');
             if (!ctx) return;
-            
+
             // 确保canvas尺寸正确
             const wrapper = ctx.parentElement;
             const rect = wrapper.getBoundingClientRect();
             ctx.width = rect.width;
             ctx.height = rect.height;
-            
+
             // 调研数据
             const surveyData = {
                 labels: [
@@ -901,7 +901,7 @@
                     }
                 }
             });
-            
+
             // 窗口大小变化时更新图表
             window.addEventListener('resize', function() {
                 if (networkViolenceChart) {
@@ -914,13 +914,13 @@
         function createParticles() {
             const container = document.getElementById('particles');
             const particleCount = 100; // 增加粒子数量
-            
+
             // 清空容器防止重复创建
             container.innerHTML = '';
 
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
-                
+
                 // 随机粒子样式
                 const size = Math.random() * 3 + 1; // 增大粒子尺寸
                 const posX = Math.random() * 100;
@@ -963,7 +963,7 @@
         // 初始化
         createParticles();
         updateButtonStates(); // 初始检查按钮状态
-        
+
         // 窗口大小变化时重新创建粒子
         window.addEventListener('resize', createParticles);
     </script>
